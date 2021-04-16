@@ -1,0 +1,11 @@
+.body__contenedor{
+    display: grid;
+    place-items: center;
+}
+
+.body__bienvenido{
+    color: white;
+    padding: 50px;
+    font-weight: 700;
+    font-size: 40px;
+}

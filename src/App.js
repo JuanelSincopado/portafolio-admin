@@ -1,25 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import firebase, { FirebaseContext } from "./context/firebase/Firebase";
+import Login from "./components/Login/Login";
+import Body from "./components/body/Body";
+import "./App.css";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
+    return (
+        <FirebaseContext.Provider
+            value={{
+                firebase,
+            }}
         >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+            <Router>
+                <Switch>
+                    <Route exact path="/" component={Login} />
+                    <Route exact path="/body" component={Body} />
+                </Switch>
+            </Router>
+        </FirebaseContext.Provider>
+    );
 }
 
 export default App;
