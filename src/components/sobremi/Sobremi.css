@@ -1,4 +1,4 @@
-.sobremi__contenedor{
+.sobremi__contenedor {
     width: 50%;
     margin-top: 50px;
     background-color: white;
@@ -7,19 +7,25 @@
     border-radius: 10px;
 }
 
-.sobremi__titulo{
+.sobremi__titulo {
     text-align: center;
     font-weight: 700;
     font-size: 30px;
     padding: 10px;
 }
 
-.sobremi__texto{
+.sobremi__texto {
     padding: 10px;
     text-align: center;
 }
 
-.sobremi__input{
+.sobremi__formulario {
+    width: 90%;
+    margin: auto;
+    text-align: center;
+}
+
+.sobremi__input {
     border: none;
     border-bottom: solid 1px #e1e1e1e1;
     width: 100%;
@@ -29,10 +35,40 @@
     font-size: 20px;
 }
 
-.sobremi__boton{
+.sobremi__boton {
     text-align: center;
     background-color: var(--azul);
     border-radius: 10px;
     font-size: 20px;
     border: none;
+    cursor: pointer;
+    padding: 5px 20px;
+    outline-width: 0;
+}
+
+.sobremi__boton:hover{
+    box-shadow: 0px 0px 5px 3px #e1e1e1e1;
+    transition: all 0.2s ease;
+}
+
+.sobremi__mensaje{
+    text-align: center;
+    padding: 10px;
+    background-color: var(--naranja);
+    color: white;
+    border-radius: 10px;
+    font-size: 20px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin: 10px;
+}
+
+@media (max-width: 768px) {
+    .sobremi__contenedor {
+        width: 95%;
+    }
+
+    .sobremi__boton {
+        width: 50%;
+    }
 }

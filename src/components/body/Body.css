@@ -9,3 +9,12 @@
     font-weight: 700;
     font-size: 40px;
 }
+
+@media (max-width: 768px) {
+    .body__bienvenido{
+        text-align: center;
+        font-size: 30px;
+        line-height: 40px;
+
+    }
+}

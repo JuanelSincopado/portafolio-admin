@@ -16,7 +16,8 @@ const Login = (props) => {
         if (usuario) {
             props.history.push("/body");
         }
-    }, [usuario])
+    }, [usuario]) // eslint-disable-line
+
 
     const handleOnChange = (e) => {
         setCampos({
