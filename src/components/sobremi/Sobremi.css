@@ -1,6 +1,7 @@
 .sobremi__contenedor {
     width: 50%;
     margin-top: 50px;
+    margin-bottom: 50px;
     background-color: white;
     color: var(--negro);
     padding: 20px;
